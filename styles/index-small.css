@@ -154,7 +154,7 @@ nav a.active {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 2.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: hand;
+    cursor: pointer;
 }
 
 .course-card:hover {
