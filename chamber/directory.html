@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos Chamber of Commerce</title>
+    <meta name="description" content="A resource hub for businesses in the city of lagos offering events and networking opportunities.">
+    <meta name="author" content="Charles Ukoh">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://totonzinto.github.io/wdd231/chamber/images/Lagos">
+    <meta property="og:url" content="https://totonzinto.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/lagos.png" type="image/png">
+    <link rel="stylesheet" href="styles/normalize.css"> 
+    <link rel="stylesheet" href="styles/directory.css"> 
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="images/lagos.png" alt="Lagos Chamber of Commerce Logo" class="logo">
+            <div>
+                <h1>Lagos</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+            
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <img src="images/hero.jpg" alt="Scalable, responsive hero image" class="hero-image">
+            <button class="hero-button">Keynote Tickets</button>
+        </div>
+    </div>
+
+    <main>
+        <h2 class="home-title">Home</h2>
+        <div class="home-grid">
+            <section class="section event-section">
+                <h3 class="section-title">Events</h3>
+                <p>Beach Festival</p>
+                <p>International Conference 2025</p>
+                <p>Nsppd prayer conference lagos</p>
+            </section>
+            <section class="section weather-section">
+                <h3 class="section-title">Current Weather</h3>
+                <div class="weather-info">
+                    <img src="images/weather.png" alt="Weather Icon" class="weather-icon">
+                    <div class="weather-details">
+                        <p class="temperature">75°F</p>
+                        <p>Partly Cloudy</p>
+                        <p>High: 85°</p>
+                        <p>Low: 52°</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section forecast-section">
+                <h3 class="section-title">Weather Forecast</h3>
+                <p>Today: 90°F</p>
+                <p>Wednesday: 89°F</p>
+                <p>Thursday: 68°F</p>
+            </section>
+        </div>
+
+        <div class="member-directory">
+            <h2 class="member-directory-title">Member Directory</h2>
+            <div class="view-toggle">
+                <button id="grid-view" class="toggle-button active">Grid View</button>
+                <button id="list-view" class="toggle-button">List View</button>
+            </div>
+            <div class="grid-container">
+                <!-- Members will be populated here via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <p>Lagos Chamber of Commerce</p>
+            <p>1, Idowu Taylor Street </p>
+            <p>Victoria Island, Lagos</p>
+            <p>lcci@lagoschamber.com</p>
+            <p>(+234) 818 878 3081</p>
+        </div>
+        <div class="footer-center social-icons">
+            <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+                <img src="images/youtube.png" alt="YouTube Icon" class="icon-youtube">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
+                <img src="images/xx.png" alt="Twitter Icon" class="icon-twitter">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="Visit our LinkedIn">
+                <img src="images/linkedln.png" alt="LinkedIn Icon" class="icon-linkedin">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>WDD231 Class Project</p>
+            <p>&copy; <span id="current-year"></span> Lagos Chamber of Commerce</p>
+            <p>Last Modification: <p>&copy; <span id="currentyear"></span>🌹Chioma Nwosu🌹 | Nigeria</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
