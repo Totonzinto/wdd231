@@ -1,7 +1,7 @@
-/* Normalize CSS */
+
 @import url('normalize.css');
 
-/* Global Styles */
+
 :root {
     --primary-color: #2a4d69;
     --secondary-color: #4b86b4;
@@ -11,7 +11,7 @@
     --light-text: #fff;
 }
 
-/* General Resets */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,14 +19,14 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body Styling */
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
-/* Header Styles */
+
 header {
     background: var(--primary-color);
     color: var(--light-text);
@@ -60,14 +60,14 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
-/* Main Content */
+
 main {
     max-width: 1100px;
     margin: auto;
     padding: 2rem;
 }
 
-/* Toggle View Buttons */
+
 .toggle-view {
     display: flex;
     justify-content: center;
@@ -75,30 +75,17 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.toggle-view button {
-    background: var(--secondary-color);
-    color: var(--light-text);
-    border: none;
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: tranform 0.3s;
-}
 
-.toggle-view button:hover {
-    background: var(--accent-color);
-    color: var(--text-color);
-}
 
-/* Directory Grid */
+
+
 .directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
 }
 
-/* Member Cards */
+
 .member-card {
     background: var(--light-text);
     border-radius: 8px;
@@ -132,7 +119,7 @@ main {
     text-decoration: underline;
 }
 
-/* List View */
+
 .directory.list-view {
     display: flex;
     flex-direction: column;
@@ -150,7 +137,7 @@ main {
     margin-left: 1rem;
 }
 
-/* Footer */
+
 footer {
     background: var(--primary-color);
     color: var(--light-text);
@@ -178,7 +165,12 @@ footer {
     font-size: 0.85rem;
 }
 
-/* Responsive Design */
+.business-card:hover{
+    color: #2a4d69;
+    opacity: 0.7;
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -197,4 +189,16 @@ footer {
     .directory {
         grid-template-columns: 1fr;
     }
+
+    #nav-menu {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #nav-menu.show {
+        display: block;
+    }
+
 }
