@@ -10,7 +10,7 @@ async function fetchMembers() {
 
 function displayMembers(members) {
     const gridContainer = document.querySelector('.grid-container');
-    gridContainer.innerHTML = ''; // Clear previous content
+    gridContainer.innerHTML = ''; 
 
     members.forEach(member => {
         const card = document.createElement('div');
@@ -29,12 +29,11 @@ function displayMembers(members) {
         gridContainer.appendChild(card);
     });
 
-    // Set default view to grid
     gridContainer.classList.add('grid-view');
-    changeView('grid'); // Set initial view to grid
+    changeView('grid'); 
 }
 
-// Add view switching functionality
+
 function changeView(view) {
     const gridContainer = document.querySelector('.grid-container');
     
@@ -47,27 +46,13 @@ function changeView(view) {
     }
 }
 
-// Event listeners for view toggles
-document.getElementById('grid-view').addEventListener('click', () => {
-    changeView('grid');
-    document.getElementById('grid-view').classList.add('active');
-    document.getElementById('list-view').classList.remove('active');
-});
-
-document.getElementById('list-view').addEventListener('click', () => {
-    changeView('list');
-    document.getElementById('list-view').classList.add('active');
-    document.getElementById('grid-view').classList.remove('active');
-});
-
-// Fetch and display members on page load
 document.addEventListener('DOMContentLoaded', fetchMembers);
 
 
 
 document.querySelector('nav').style.display = 'flex';
 
-// Toggle menu functionality
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu-button');
     const navMenu = document.getElementById('nav-menu');
