@@ -88,6 +88,7 @@ main {
 .flex{
     display: flex;
     gap: 20px;
+    
 }
 
 
@@ -104,6 +105,19 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    
+}
+
+.events:hover{
+    transform: translateY(-5px);
+}
+
+.weather:hover{
+    transform: translateY(-5px);
+}
+
+.weather.map:hover{
+    transform: translateY(-5px);
 }
 
 
@@ -123,6 +137,10 @@ main {
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
+}
+
+.spotlight-card:hover{
+    transform: translateY(-5px);
 }
 
 .spotlight-card img {
