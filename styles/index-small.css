@@ -55,7 +55,7 @@ header {
    
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -79,7 +79,7 @@ header {
     object-fit: cover;
 }
 
-/* Navigation */
+
 nav {
     background-color: var(--secondary-color);
     padding: 0.5rem;
@@ -215,7 +215,7 @@ nav a.active {
     font-size: 0.9rem;
 }
 
-/* Main Content */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -235,7 +235,7 @@ main h1 {
     padding: 1rem;
 }
 
-/* For screens larger than 768px */
+
 @media screen and (min-width: 768px) {
     .sections-container {
         flex-direction: row;
@@ -265,7 +265,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Course Filtering */
+
 .filter-container {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -287,7 +287,7 @@ h2 {
     background-color: var(--accent-color);
 }
 
-/* Course Cards */
+
 .course-card {
     border: 1px solid #ddd;
     padding: 1rem;
@@ -331,7 +331,7 @@ h2 {
     padding: 0;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--primary-color);
     color: white;
