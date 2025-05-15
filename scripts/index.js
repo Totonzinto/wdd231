@@ -60,7 +60,7 @@ const courses = [
       certificate: 'Web and Computer Programming',
       description: 'This course builds on prior experience in Web Fundamentals...',
       technology: ['HTML', 'CSS', 'JavaScript'],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
