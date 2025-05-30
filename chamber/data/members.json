@@ -4,7 +4,7 @@
         "address": "123 Innovation St, Timbuktu, Mali",
         "phone": "+2347040004422",
         "url": "https://www.zenithbank.com/",
-        "image": "https://www.lagoschamber.com/wp-content/uploads/2023/05/Picture6.png",
+        "image": "https://www.zenithbank.com/media/1400/zenith-bank-logo_1.png",
         "level": 3
     },
     {
@@ -12,7 +12,7 @@
         "address": "1 Billings Way, Oregun, P.O Box 1063,Ikeja, Lagos",
         "phone": "+234-(1)-2240332",
         "url": "https://www.unilevernigeria.com/",
-        "image": "https://www.lagoschamber.com/wp-content/uploads/2023/05/Unilever-Logo.png",
+        "image": "https://www.unilevernigeria.com/core-assets/logos/logo-animated.svg",
         "level": 2
     },
     {
@@ -20,15 +20,15 @@
         "address": "MTN Plaza, No 1, Awolowo Road, Falomo, Ikoyi, Lagos",
         "phone": "+223 555-9012",
         "url": "https://www.mtn.ng/",
-        "image": "https://www.lagoschamber.com/wp-content/uploads/2023/05/Untitled2.png",
+        "image": "https://www.mtn.ng/wp-content/themes/mtn-vivid-wp/public/img/mtn-logo.svg",
         "level": 3
     },
     {
-        "name": "Fenchurch Group",
-        "address": "Fenchurch House154 Prince Ade Odedina Street,Victoria IslandLagos, Nigeria",
-        "phone": "+234 8127906775",
-        "url": "https://fenchurchgroupng.com/",
-        "image": "https://www.lagoschamber.com/wp-content/uploads/2023/05/Picture9.png",
+        "name": "Ikeja Electric",
+        "address": "Obafemi Awolowo Way, Alausa, Ikeja, Lagos",
+        "phone": "0201-7000-250",
+        "url": "https://www.ikejaelectric.com/",
+        "image": "https://www.ikejaelectric.com/wp-content/uploads/2020/05/Ikeja-Electric-Logo-new-1.png",
         "level": 1
     },
     {
@@ -36,15 +36,15 @@
         "address": "Plot PC 12, Churchgate Street, Victoria Island, Lagos.",
         "phone": "+234 7002442668",
         "url": "https://www.aiicoplc.com/",
-        "image": "https://www.lagoschamber.com/wp-content/uploads/2023/05/Picture4.png",
+        "image": "https://www.aiicoplc.com/images/logo.png",
         "level": 2
     },
     {
-        "name": "Pwc Nigeria",
-        "address": " PwC Nigeria",
-        "phone": "+2342012711700",
-        "url": "https://www.pwc.com/ng/en.html",
-        "image": "https://www.lagoschamber.com/wp-content/uploads/2024/01/Screenshot-2024-01-30-094646.png",
+        "name": "Ibom Air",
+        "address": " Uyo, Akwa Ibom Nigeria",
+        "phone": "+234 7001235942",
+        "url": "https://www.ibomair.com/",
+        "image": "https://www.ibomair.com/wp-content/uploads/2018/11/ibom-air-logo_small_trans.png",
         "level": 3
     },
     {
@@ -52,7 +52,7 @@
         "address": "Address: Lekki Free Zone opposite Tiye town, Akodo road, off Lekki-Epe Coastal Road,Lagos, Nigeria,",
         "phone": "+23414543466",
         "url": "https://lfzdc.org/",
-        "image": "https://www.lagoschamber.com/wp-content/uploads/2023/05/Picture3.png",
+        "image": "https://lfzdc.org/wp-content/uploads/2019/01/lfz-logo-small.png",
         "level": 1
     }
 ]

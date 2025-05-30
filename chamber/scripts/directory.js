@@ -29,22 +29,33 @@ function displayMembers(members) {
         gridContainer.appendChild(card);
     });
 
-    gridContainer.classList.add('grid-view');
-    changeView('grid'); 
-}
-
-
-function changeView(view) {
-    const gridContainer = document.querySelector('.grid-container');
     
-    if (view === 'grid') {
-        gridContainer.classList.remove('list-view');
-        gridContainer.classList.add('grid-view');
-    } else {
-        gridContainer.classList.add('list-view');
-        gridContainer.classList.remove('grid-view');
-    }
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const gridBtn = document.getElementById('grid-view');
+  const listBtn = document.getElementById('list-view');
+  const container = document.querySelector('.grid-container');
+
+
+  gridBtn.addEventListener('click', () => {
+    container.classList.add('grid-view');
+    container.classList.remove('list-view');
+
+    gridBtn.classList.add('active');
+    listBtn.classList.remove('active');
+  });
+
+  listBtn.addEventListener('click', () => {
+    container.classList.add('list-view');
+    container.classList.remove('grid-view');
+
+    listBtn.classList.add('active');
+    gridBtn.classList.remove('active');
+  });
+});
+
 
 document.addEventListener('DOMContentLoaded', fetchMembers);
 
