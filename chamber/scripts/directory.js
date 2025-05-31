@@ -34,27 +34,25 @@ function displayMembers(members) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const gridBtn = document.getElementById('grid-view');
-  const listBtn = document.getElementById('list-view');
-  const container = document.querySelector('.grid-container');
+    const gridViewBtn = document.getElementById('grid-view');
+    const listViewBtn = document.getElementById('list-view');
+    const container = document.querySelector('.grid-container');
 
+    gridViewBtn.addEventListener('click', function () {
+        container.classList.add('grid-view');
+        container.classList.remove('list-view');
+        gridViewBtn.classList.add('active');
+        listViewBtn.classList.remove('active');
+    });
 
-  gridBtn.addEventListener('click', () => {
-    container.classList.add('grid-view');
-    container.classList.remove('list-view');
-
-    gridBtn.classList.add('active');
-    listBtn.classList.remove('active');
-  });
-
-  listBtn.addEventListener('click', () => {
-    container.classList.add('list-view');
-    container.classList.remove('grid-view');
-
-    listBtn.classList.add('active');
-    gridBtn.classList.remove('active');
-  });
+    listViewBtn.addEventListener('click', function () {
+        container.classList.add('list-view');
+        container.classList.remove('grid-view');
+        listViewBtn.classList.add('active');
+        gridViewBtn.classList.remove('active');
+    });
 });
+
 
 
 document.addEventListener('DOMContentLoaded', fetchMembers);
