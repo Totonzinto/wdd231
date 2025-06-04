@@ -27,9 +27,7 @@ function displayMembers(members) {
             </div>
         `;
         gridContainer.appendChild(card);
-    });
-
-    
+    }); 
 }
 
 
