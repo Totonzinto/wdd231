@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Add this code to handle the modal functionality
+  // Handle modal functionality
   const learnMoreButtons = document.querySelectorAll(".learn-more");
   const closeButtons = document.querySelectorAll(".close");
 
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.openModal = function (modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
-      modal.showModal();
+      modal.showModal?.(); // Optional chaining for browsers that support <dialog>
       modal.classList.add("open");
     } else {
       console.error(`Modal with ID '${modalId}' not found.`);
@@ -46,25 +46,29 @@ document.addEventListener("DOMContentLoaded", () => {
   window.closeModal = function (modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
-      modal.close();
+      modal.close?.();
       modal.classList.remove("open");
     } else {
       console.error(`Modal with ID '${modalId}' not found.`);
     }
   };
-});
 
+  // Handle hamburger menu
+  const menuButton = document.getElementById('menu-button');
+  const navMenu = document.getElementById('nav-menu');
 
-document.querySelector('nav').style.display = 'flex';
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.getElementById('menu-button');
-    const navMenu = document.getElementById('nav-menu');
-  
-    menuButton.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-        const isExpanded = navMenu.classList.contains('show');
-        menuButton.setAttribute('aria-expanded', isExpanded);
-    });
+  menuButton.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+    const isExpanded = navMenu.classList.contains('show');
+    menuButton.setAttribute('aria-expanded', isExpanded);
   });
+
+  // Show navigation bar (ensure it's visible when JS loads)
+  document.querySelector('nav').style.display = 'flex';
+
+  // ✅ Set timestamp hidden field when page loads
+  const timestampField = document.getElementById("timestamp");
+  if (timestampField) {
+    timestampField.value = new Date().toISOString();
+  }
+});
