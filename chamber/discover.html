@@ -4,36 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lagos Chamber of Commerce</title>
-    <meta name="description" content="A resource hub for businesses in the city of lagos offering events and networking opportunities.">
+    <title>Discover Lagos - Lagos Chamber of Commerce</title>
+    <meta name="description" content="this page contains the link to homepage and the discover of lagos chamber of Commerce">
     <meta name="author" content="Chioma Nwosu">
     
-   
+    
     <meta property="og:title" content="Lagos Chamber of Commerce">
-    <meta property="og:description" content="Get the latest weather updates, 3-day forecasts, and discover upcoming local events — all in one place.">
+    <meta property="og:description" content="Explore our discover page to find interesting and beautiful places suitable for all kinds of activity that will make you enjoy the beautiful city .">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://totonzinto.github.io/wdd231/chamber/images/lagos.jpg">
+    <meta property="og:image" content="https://totonzinto.github.io/wdd231/chamber/images/Lagos">
     <meta property="og:url" content="https://totonzinto.github.io/wdd231/chamber/directory.html">
 
     <link rel="icon" href="images/lagos.jpg" type="image/png">
     <link rel="stylesheet" href="styles/normalize.css"> 
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/home.css"> 
-   
+    <link rel="stylesheet" href="styles/directory.css"> 
+    <link rel="stylesheet" href="styles/small.css"> 
+    <link rel="stylesheet" href="styles/medium.css"> 
+    <link rel="stylesheet" href="styles/large.css"> 
+
+   <script src="scripts/places.js" type="module"></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/home.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-
-
+    
 
 </head>
 <body>
     <header class="header">
         <div class="header-content">
             <img src="images/lagos.jpg" alt="Lagos Chamber of Commerce Logo" class="logo">
+            <div>
+               
+               
+            </div>
         </div>
         <nav>
-            <button id="menu-button" aria-label="Menu" aria-expanded="false">
+            <button id="menu-button" aria-label="Menu" aria-expanded="true">
                 <span>☰</span>
             </button>
             <ul id="nav-menu">
@@ -45,58 +49,24 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <img src="images/hero.jpg" alt="hero image">
-        <div class="hero-text">
-            <h2>Connecting Businesses and Building Community.</h2>
-            <p>Join the Lagos Chamber of Commerce today and grow your network!</p>
-        <a href="https://totonzinto.github.io/wdd231/chamber/join.html" class="cta-button">Join Now</a>
-        </div>
-    </section>
-
     <main>
-        <h1>Lagos Chamber of Commerce</h1>
-        <div class="flex">
-            <section class="events">
-                <h2>Upcoming Events</h2>
-                <article>
-                  <h3>Business Networking Meetup</h3>
-                    <p><strong>Date:</strong> July 15, 2025</p>
-                    <p><strong>Location:</strong> Lagos Conference Center</p>
-                    <p>Come and connect with business professionals from various industries.</p>
-                </article>
-                <article>
-                    <h3>Local Market Fair</h3>
-                    <p><strong>Date:</strong> August 5, 2025</p>
-                    <p><strong>Location:</strong> Central Park, Lagos</p>
-                    <p>Support local businesses and enjoy a fun-filled day with your community.</p>
-                </article>
-            </section>
-    
-    
-            <section class="weather">
-                <h2>Weather forecast</h2>
-                <div id="weather-info">
-                </div>
-            </section>
-    
-            <section class="weather map">
-                <h2>current weather</h2>
-                <p id="town"></p>
-                <p id="description"></p>
-                <p id="temperature"></p>
-                <img id="graphic">
-            </section>
-    
+  <h1>Discover Lagos</h1>
+  <div id="visitMessage" class="overlay-message">
+    <button id="closeBtn" class="close-btn">✖</button>
+    <div id="visitText"></div>
+  </div>
+<div id="allplaces"></div>
 
+<dialog class="modal" id="more-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button>&times;</button>
         </div>
-       
-
-        <div class="spotlights">
-            
+        <p id="modal-more"></p>
         </div>
+        </dialog>
 
-    </main>
+</main>
 
     <footer class="footer">
         <div class="footer-left">

@@ -1,0 +1,15 @@
+@media only screen and (min-width: 641px){
+  #allplaces div {
+  grid-template-areas: 
+  "photo name"
+  "photo desc"
+  "photo address"
+  "more more"
+  ;
+}
+#allplaces div img {
+  width: 300px;
+}
+
+#allplaces div img:hover {border-radius: 15px 150px;}
+}
