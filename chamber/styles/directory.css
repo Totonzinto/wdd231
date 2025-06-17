@@ -26,6 +26,12 @@ nav ul {
     margin: 0;
 }
 
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  color: #1c526d;
+}
+
 nav li {
     margin: 0.5rem 1rem;
 }

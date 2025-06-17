@@ -12,6 +12,7 @@ thecard.id = element.more
 const photo = document.createElement('img')
 photo.src = `images/${element.image}`
 photo.alt = element.name 
+photo.loading = "lazy"; 
 thecard.appendChild(photo)
 
 const title = document.createElement('h2')
@@ -93,3 +94,14 @@ const messageBox = document.getElementById('visitMessage');
     }
 
     localStorage.setItem('lastVisit', now.toString());
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll("#nav-menu a");
+  const currentPage = location.pathname.split("/").pop();
+
+  navLinks.forEach(link => {
+    if (link.getAttribute("href").includes(currentPage)) {
+      link.classList.add("active");
+    }
+  });
+});
