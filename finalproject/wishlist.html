@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <meta name="description" content="Browse a dynamic wishlist of your favorite items. Add, view, and manage your interests all in one interactive page.">
+    <meta name="author" content="Chioma Nwosu">
+
+    <meta property="og:title" content="Wishlist">
+    <meta property="og:description" content="See your top 15 wishlist items in one easy-to-use interface. Add favorites and explore more with our interactive modal view.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://totonzinto.github.io/wdd231/finalproject/images/wishlist.jpg">
+    <meta property="og:url" content="https://totonzinto.github.io/wdd231/final/index.html">
+
+    <link rel="icon" href="images/wishlist.jpg" type="image/jpg">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/wishlist.css">
+
+   
+   
+    <script src="scripts/main.js" defer></script> 
+    <script src="scripts/render.js" defer></script>
+    <script src="scripts/modal.js" defer></script> 
+    <script type="module" src="scripts/main.js"></script>
+     <script src="scripts/home.js" defer></script> 
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="images/wishlist.jpg" alt="wishlist website" class="logo" loading="lazy">
+        </div>
+        <nav>
+              <button id="menu-button" aria-label="Menu" aria-expanded="false">
+                <span>☰</span>
+            </button> 
+           <ul id="nav-menu">
+                <li><a href="https://totonzinto.github.io/wdd231/finalproject/index.html">Home</a></li>
+                <li><a href="https://totonzinto.github.io/wdd231/finalproject/wishlist.html">Wishlist</a></li>
+                <li><a href="https://totonzinto.github.io/wdd231/finalproject/Signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main id="wishlist-container">
+    <p>Loading wishlist...</p>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-content">
+    <button class="close-btn" aria-label="Close modal">&times;</button>
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+    <img id="modal-image" alt="">
+    <p id="modal-extra"></p>
+  </div>
+</div>
+  </main>
+
+
+
+   <footer class="footer">
+        <div class="footer-left">
+            <p>Wishlist Website</p>
+            <p>1, Idowu Taylor Street </p>
+            <p>Victoria Island, Lagos</p>
+            <p>zinto@gmail.com</p>
+            <p>(+234) 818 878 3081</p>
+        </div>
+        <div class="footer-center social-icons">
+            <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+                <img src="images/youtube.png" alt="YouTube Icon" class="icon-youtube">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
+                <img src="images/xx.png" alt="Twitter Icon" class="icon-twitter">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="Visit our LinkedIn">
+                <img src="images/linkedln.png" alt="LinkedIn Icon" class="icon-linkedin">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>WDD231 personal Project</p>
+            <p>&copy; <span id="current-year"></span> Wishlist Website</p>
+            <p>&copy; <span id="currentyear"></span>🌹Chioma Nwosu🌹 | Nigeria</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>

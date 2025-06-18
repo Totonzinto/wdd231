@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Smartwatch X20",
+    "category": "Wearables",
+    "price": "$120",
+    "image": "images/smartwatch.webp",
+    "shortDescription": "Fitness tracking smartwatch.",
+    "longDescription": "Track steps, heart rate, and sleep with this all-in-one wearable."
+  },
+  {
+    "name": "Wireless Headphones",
+    "category": "Audio",
+    "price": "$80",
+    "image": "images/headphone.webp",
+    "shortDescription": "Noise-canceling over-ear headphones.",
+    "longDescription": "Enjoy immersive sound and peace in any environment."
+  },
+  {
+    "name": "E-Reader Pro",
+    "category": "Gadgets",
+    "price": "$150",
+    "image": "images/e-reader.webp",
+    "shortDescription": "Read anywhere with no glare.",
+    "longDescription": "Download thousands of books and read under sunlight comfortably."
+  },
+  {
+    "name": "Travel Backpack",
+    "category": "Travel",
+    "price": "$65",
+    "image": "images/backpack.webp",
+    "shortDescription": "Durable and lightweight design.",
+    "longDescription": "Perfect for day trips or weekend getaways with secure compartments."
+  },
+  {
+    "name": "Instant Camera",
+    "category": "Photography",
+    "price": "$95",
+    "image": "images/camera.webp",
+    "shortDescription": "Capture and print photos instantly.",
+    "longDescription": "Fun and retro instant camera with colorful film packs."
+  },
+  {
+    "name": "Smart LED Bulbs",
+    "category": "Home",
+    "price": "$40",
+    "image": "images/bulbs.webp",
+    "shortDescription": "Control lights with your voice.",
+    "longDescription": "Compatible with Alexa and Google, adjust brightness and color."
+  },
+  {
+    "name": "Standing Desk Converter",
+    "category": "Office",
+    "price": "$110",
+    "image": "images/desk.webp",
+    "shortDescription": "Work standing or sitting.",
+    "longDescription": "Ergonomic design improves posture and energy throughout the day."
+  },
+  {
+    "name": "Noise Machine",
+    "category": "Wellness",
+    "price": "$35",
+    "image": "images/noisemachine.webp",
+    "shortDescription": "Sleep better with white noise.",
+    "longDescription": "Choose from nature sounds, white noise, or fan sounds."
+  },
+  {
+    "name": "Electric Kettle",
+    "category": "Kitchen",
+    "price": "$55",
+    "image": "images/kettle.webp",
+    "shortDescription": "Boil water in under 2 minutes.",
+    "longDescription": "Sleek design with auto shut-off and temperature control."
+  },
+  {
+    "name": "Mini Projector",
+    "category": "Entertainment",
+    "price": "$130",
+    "image": "images/projector.webp",
+    "shortDescription": "Portable cinema experience.",
+    "longDescription": "Stream movies from your phone onto any surface with this mini projector."
+  },
+  {
+    "name": "Bluetooth Tracker",
+    "category": "Accessories",
+    "price": "$25",
+    "image": "images/tracker.webp",
+    "shortDescription": "Find lost items quickly.",
+    "longDescription": "Attach it to keys, bags, or wallets and track with your phone."
+  },
+  {
+    "name": "Aromatherapy Diffuser",
+    "category": "Wellness",
+    "price": "$30",
+    "image": "images/diffuser.webp",
+    "shortDescription": "Relax with essential oils.",
+    "longDescription": "Quiet and calming diffuser with LED light options."
+  },
+  {
+    "name": "Gaming Controller",
+    "category": "Gaming",
+    "price": "$60",
+    "image": "images/controller.webp",
+    "shortDescription": "Compatible with multiple devices.",
+    "longDescription": "Responsive buttons and ergonomic grip for long sessions."
+  },
+  {
+    "name": "Magnetic Charging Cable",
+    "category": "Tech",
+    "price": "$20",
+    "image": "images/cable.webp",
+    "shortDescription": "Fast charging with magnetic tip.",
+    "longDescription": "Reduces wear on charging ports and supports fast charge protocols."
+  },
+  {
+    "name": "Portable Power Bank",
+    "category": "Tech",
+    "price": "$45",
+    "image": "images/powerbank.webp",
+    "shortDescription": "Charge devices on the go.",
+    "longDescription": "High-capacity power bank with USB-C and USB-A ports."
+  }
+]
