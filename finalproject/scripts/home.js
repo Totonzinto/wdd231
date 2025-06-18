@@ -1,12 +1,11 @@
-// ==== 1. Current Year ====
 document.getElementById("current-year").textContent = new Date().getFullYear();
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// ==== 2. Last Modified ====
+
 const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
 
-// ==== 3. Welcome Message ====
+
 const welcomeKey = "wishlistVisit";
 const visitMessage = document.createElement("p");
 visitMessage.style.textAlign = "center";
@@ -24,17 +23,17 @@ if (!storedVisit) {
     localStorage.setItem(welcomeKey, new Date().toISOString());
 }
 
-// Add message to top of main
+
 document.querySelector("main").insertAdjacentElement("afterbegin", visitMessage);
 
-// ==== 4. Lazy Loading Confirmation ====
+
 document.querySelectorAll('img[loading="lazy"]').forEach(img => {
     img.addEventListener('load', () => {
-        console.log(`Lazy-loaded image: ${img.src}`);
+        // console.log(`Lazy-loaded image: ${img.src}`);
     });
 });
 
-// ==== 5. Mobile Nav Toggle ====
+
 const menuButton = document.getElementById("menu-button");
 const navMenu = document.getElementById("nav-menu");
 

@@ -79,6 +79,12 @@ nav a.active {
     object-fit: cover;
 }
 
+h1 {
+    text-align: center;
+    color: #003366;
+}
+
+
 .intro {
     display: grid;
     grid-template-columns: 1fr;

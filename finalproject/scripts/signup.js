@@ -1,7 +1,7 @@
 document.querySelector('.signup-form').addEventListener('submit', function (e) {
-    e.preventDefault(); // prevent page reload
+    e.preventDefault(); 
 
-    // Collect form data
+   
     const data = {
       fname: document.getElementById('fname').value,
       lname: document.getElementById('lname').value,
@@ -11,10 +11,10 @@ document.querySelector('.signup-form').addEventListener('submit', function (e) {
       newsletter: document.querySelector('input[name="newsletter"]').checked
     };
 
-    // Store in localStorage
+   
     localStorage.setItem('signupData', JSON.stringify(data));
 
-    // Redirect to confirmation page
+    
     window.location.href = 'confirmation.html';
   });
 
